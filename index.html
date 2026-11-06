@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anthony Baroud – Robotics &amp; Perception</title>
+<meta name="description" content="Mechanical engineering student working on monocular visual SLAM, scene dynamics, mapping and robot perception.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1d2630; --muted: #5d6b7a; --line: #e3e8ee;
+    --accent: #004f90; --card: #f7f9fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f141a; --fg: #e6ebf0; --muted: #95a3b2; --line: #232c36; --accent: #6db3f2; --card: #151c24; }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 22px; }
+  header.top { border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--bg); z-index: 5; }
+  header.top .wrap { display: flex; justify-content: space-between; align-items: center; height: 54px; }
+  header.top strong { font-size: 15px; }
+  nav a { margin-left: 18px; font-size: 14px; color: var(--muted); }
+  nav a:hover { color: var(--fg); text-decoration: none; }
+  .hero { padding: 64px 0 36px; }
+  .hero h1 { font-size: 40px; line-height: 1.15; margin: 0 0 6px; }
+  .hero .sub { color: var(--muted); font-size: 18px; margin: 0 0 20px; }
+  .hero p { max-width: 640px; margin: 0 0 18px; }
+  .links a { display: inline-block; margin: 0 14px 6px 0; font-size: 15px; }
+  section { padding: 34px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 22px; margin: 0 0 18px; }
+  .item { margin-bottom: 22px; }
+  .item .head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .item h3 { font-size: 17px; margin: 0; }
+  .when { color: var(--muted); font-size: 14px; }
+  .role { color: var(--muted); font-size: 15px; margin: 0 0 6px; }
+  ul { margin: 6px 0 0; padding-left: 20px; }
+  li { margin-bottom: 4px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 16px; }
+  @media (max-width: 480px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 18px; }
+  .card h3 { font-size: 17px; margin: 0 0 2px; }
+  .card .tag-line { color: var(--muted); font-size: 13px; margin: 0 0 8px; }
+  .card p { margin: 0 0 10px; font-size: 15px; }
+  .tags span { display: inline-block; font-size: 12px; border: 1px solid var(--line); border-radius: 999px; padding: 1px 9px; margin: 0 6px 6px 0; color: var(--muted); }
+  .card a.more { font-size: 14px; }
+  .skills p { margin: 0 0 8px; font-size: 15px; }
+  .skills b { font-weight: 600; }
+  footer { border-top: 1px solid var(--line); padding: 26px 0 40px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <strong>Anthony Baroud</strong>
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <h1>Anthony Baroud</h1>
+    <p class="sub">Robotics · Visual SLAM · Perception</p>
+    <p>
+      Mechanical engineering student at Notre Dame University – Louaize (Lebanon), expected graduation Spring 2027.
+      I work on monocular visual SLAM, scene dynamics, 3D mapping and perception for field and aerial robots.
+    </p>
+    <div class="links">
+      <a href="https://github.com/anthony04ba">GitHub</a>
+      <a href="https://linkedin.com/in/anthonybaroud">LinkedIn</a>
+      <a href="https://www.youtube.com/playlist?list=PLVeFUcAm8ZAs">Project demos</a>
+      <a href="mailto:anthonyjbaroud@hotmail.com">Email</a>
+    </div>
+  </div>
+
+  <section id="research">
+    <h2>Research</h2>
+
+    <div class="item">
+      <div class="head"><h3>Vision and Robotics Lab – American University of Beirut</h3><span class="when">June 2025 – Present</span></div>
+      <p class="role">Research Intern (part-time), with Nicolas Abboud</p>
+      <ul>
+        <li>Benchmarked state-of-the-art SLAM systems on KITTI, TUM RGB-D, EuRoC MAV and Bonn RGB-D.</li>
+        <li>Evaluated monocular depth estimation models for accuracy and latency on Jetson AGX Orin; converted models to ONNX.</li>
+        <li>Segmented and detected scene dynamics using optical flow, depth, surface normals, uncertainty and temporal constraints.</li>
+        <li>Estimating scene dynamics from photometric residuals in direct visual SLAM.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="head"><h3>DREAM Lab – Georgia Tech Europe / CNRS</h3><span class="when">June – August 2026</span></div>
+      <p class="role">Research Intern, supervised by Prof. Stephanie Aravecchia</p>
+      <ul>
+        <li>Extended the open-source Hydra 3D scene graph pipeline into modular software for offline reconstruction with incremental online updates, generalized to agricultural environments and validated in NVIDIA Isaac Sim.</li>
+        <li>Implemented rolling-window map pruning and region querying in OctoMap; benchmarked OctoMap and NvBlox latency and VRAM usage.</li>
+        <li>Developed ROS 2 nodes for LiDAR/RGB point cloud colorization, semantic segmentation and cylindrical crop segmentation.</li>
+        <li>Supported field robotics testing, including RTK-GNSS/INS calibration on boat robots.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <h3 style="font-size:17px;margin:0 0 4px;">Publication</h3>
+      <p style="margin:0;font-size:15px;">
+        N. Abboud, <b>A. Baroud</b>, K. Saad, A. Srebreniak Yang, I. Elhajj, D. Asmar, J. S. Zelek.
+        <i>Photogrammetric and Deep Learned Hybrid Monocular Visual SLAM.</i>
+        Submitted to IEEE Robotics and Automation Letters (RA-L), 2026.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>ScoutHawk – Wildfire-Detection UAV</h3>
+        <p class="tag-line">Final-year graduation project</p>
+        <p>Autonomous UAV for early wildfire detection: YOLO segmentation on Jetson Orin Nano, RGB–thermal camera calibration, and fire geolocation from 2D detections, GPS and a DEM.</p>
+        <div class="tags"><span>YOLO</span><span>Jetson</span><span>PX4</span><span>Camera calibration</span></div>
+      </div>
+
+      <div class="card">
+        <h3>ORB Visual-LiDAR-IMU Fusion Odometry</h3>
+        <p class="tag-line">MEN540 final project</p>
+        <p>Monocular ORB visual odometry fused with 3D LiDAR and IMU to estimate a 6-DoF trajectory, with LiDAR-corrected metric scale and IMU yaw fusion; validated against GNSS using ATE.</p>
+        <div class="tags"><span>Visual odometry</span><span>Sensor fusion</span><span>PnP + RANSAC</span></div>
+      </div>
+
+      <div class="card">
+        <h3>MechaBoB – RC Excavator Robot</h3>
+        <p class="tag-line">1st place, ASME EFX</p>
+        <p>Custom RC excavator designed in SolidWorks and fully 3D-printed, built around an ESP32 with FlySky RC and FPV teleoperation.</p>
+        <div class="tags"><span>SolidWorks</span><span>ESP32</span><span>3D printing</span></div>
+        <a class="more" href="https://credentials.asme.org/2fa573b9-3e71-4e05-b8ed-1bad8bd9b057">Award credential</a>
+      </div>
+
+      <div class="card">
+        <h3>UAV Follow-Me – Perception Pipeline</h3>
+        <p class="tag-line">&nbsp;</p>
+        <p>Benchmarked YOLO backbones with ByteTrack and BoT-SORT for person tracking; estimated per-person depth from eroded segmentation masks and recovered pose relative to the camera.</p>
+        <div class="tags"><span>YOLO</span><span>Tracking</span><span>Depth</span></div>
+      </div>
+
+      <div class="card">
+        <h3>5-DOF Manipulator Pick-and-Place</h3>
+        <p class="tag-line">MEN540 milestone project</p>
+        <p>DH-based model and closed-form inverse kinematics of a 5-DOF spherical manipulator in Python, with quintic trajectories and singularity avoidance; simulated sorting of seven colored boxes.</p>
+        <div class="tags"><span>Kinematics</span><span>Trajectory planning</span><span>Python</span></div>
+      </div>
+
+      <div class="card">
+        <h3>LiDAR-Based Maze-Solving Robot</h3>
+        <p class="tag-line">MEN401 final project</p>
+        <p>TurtleBot3 in a custom Gazebo maze: ROS 2 SLAM Toolbox mapping, tuned Nav2 costmaps, a custom A* planner node and a proportional path-tracking controller.</p>
+        <div class="tags"><span>ROS 2</span><span>Nav2</span><span>A*</span><span>Gazebo</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Point Cloud De-skewing</h3>
+        <p class="tag-line">&nbsp;</p>
+        <p>Motion compensation of LiDAR scans in the INS frame to correct scan distortion.</p>
+        <div class="tags"><span>LiDAR</span><span>INS</span><span>PCL</span></div>
+      </div>
+
+    </div>
+    <p style="margin-top:18px;font-size:15px;">More code and demos: <a href="https://github.com/anthony04ba">github.com/anthony04ba</a> · <a href="https://www.youtube.com/playlist?list=PLVeFUcAm8ZAs">YouTube playlist</a>.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <p><b>Robotics &amp; perception:</b> SLAM, robot perception, mapping, camera calibration, 3D geometry, sensor fusion, YOLO, RANSAC, PCL</p>
+    <p><b>Software:</b> Python, C++, CMake, PyTorch, OpenCV, ROS 2, MATLAB, Bash, Git, Docker, Linux</p>
+    <p><b>Simulation &amp; hardware:</b> Gazebo, NVIDIA Isaac Sim, PX4, SolidWorks, Autodesk Inventor, VHDL</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:anthonyjbaroud@hotmail.com">anthonyjbaroud@hotmail.com</a> ·
+      <a href="https://linkedin.com/in/anthonybaroud">LinkedIn</a> ·
+      <a href="https://github.com/anthony04ba">GitHub</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Anthony Baroud</div>
+</footer>
+
+</body>
+</html>
